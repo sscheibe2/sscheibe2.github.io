@@ -4,4 +4,3 @@
 
 comeon
 
-[Über mich](/sscheibe2#about)
