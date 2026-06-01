@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+
+		<title>reveal.js – The HTML Presentation Framework</title>
+
+		<meta
+			name="description"
+			content="A framework for easily creating beautiful presentations using HTML"
+		/>
+		<meta name="author" content="Hakim El Hattab" />
+
+		<meta name="mobile-web-app-capable" content="yes" />
+		<meta name="mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="stylesheet" href="dist/reset.css" />
+		<link rel="stylesheet" href="dist/reveal.css" />
+		<link rel="stylesheet" href="dist/theme/black.css" id="theme" />
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="dist/plugin/highlight/monokai.css" />
+	</head>
+
+	<body>
+		<div class="reveal">
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+						<img
+							src="file:///C:/Users/sebas/Downloads/onlycode-logo-integrated-o_Version3.svg"
+							alt="reveal.js logo"
+							style="height: 180px; margin: 0 auto 4rem auto; background: transparent"
+							class="demo-logo"
+					</a>
+					<h3>OnlyCode</h3>
+					<p>
+						<small
+							>Created by <a href="http://hakim.se">Scheibelmasser</a> and
+							<a href="https://github.com/hakimel/reveal.js/graphs/contributors"
+								>contributors</a
+							></small
+						>
+					</p>
+				</section>
+
+
+				<!-- Example of nested vertical slides -->
+				<section>
+					<section>
+						<h2>Projektvorschau</h2>
+						<br />
+						<p>Stack: Vue 3 / Nuxt 3  •  PHP / Symfony  •  Postgres •  REST-API  •  Docker</p>
+					</section>
+					<section>
+						<h2>Code-Snippet Platform</h2>
+						<p>
+                            Beiträge hochladen, liken, disliken und kommentieren — vollständig authentifiziert via JWT
+						</p>
+					</section>
+					<section>
+						<h2>Code Swipe</h2>
+						<p>Tinder-ähnliches Wischen zum Liken/Disliken mit Auto Code-Highlighting via Highlight.js</p>
+						<br />
+
+					</section>
+                    <section>
+                        <h2>Wall of Fame & Shame</h2>
+                        <p>
+                            Ranking der beliebtesten und unbeliebtesten Code-Snippets mit Podium-Ansicht
+                        </p>
+                    </section>
+                    <section>
+                        <h2>Suche & Filter</h2>
+                        <p>
+                            Filtern nach Programmiersprache und Titel
+                        </p>
+                        <a href="#/2">
+                        </a>
+                    </section>
+				</section>
+
+
+
+
+				<section data-auto-animate>
+					<h2 data-id="code-title">Test Code</h2>
+					<pre
+						data-id="code-animation"
+					><code class="hljs javascript" data-trim data-line-numbers="|4,8-11|17|22-24"><script type="text/template">
+						## My public repositories
+
+                        {% for repository in site.github.public_repositories %}
+                        {% unless repository.fork %}
+                        - **[{{ repository.name }}]({{ repository.html_url }})**
+                        ⭐ {{ repository.stargazers_count }} | 🍴 {{ repository.forks_count }}
+                        _{{ repository.description }}_
+                        {% endunless %}
+                        {% endfor %}
+					</script></code></pre>
+				</section>
+                
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="dist/plugin/zoom.js"></script>
+		<script src="dist/plugin/notes.js"></script>
+		<script src="dist/plugin/search.js"></script>
+		<script src="dist/plugin/markdown.js"></script>
+		<script src="dist/plugin/highlight.js"></script>
+		<script>
+			// Also available as an ES module, see: https://revealjs.com/initialization/
+			// import Reveal from 'reveal.js';
+			// import RevealZoom from 'reveal.js/plugin/zoom';
+			// import RevealNotes from 'reveal.js/plugin/notes';
+			// import RevealSearch from 'reveal.js/plugin/search';
+			// import RevealMarkdown from 'reveal.js/plugin/markdown';
+			// import RevealHighlight from 'reveal.js/plugin/highlight';
+
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight],
+			});
+		</script>
+	</body>
+</html>
